@@ -10,5 +10,5 @@ RUN apk update && \
 WORKDIR /app
 RUN npm install
 
-EXPOSE 8080
+EXPOSE 4200
 CMD ["ash"]
