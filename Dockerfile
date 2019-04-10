@@ -1,9 +1,14 @@
-# https://hub.docker.com/r/library/node/tags/
-FROM node:10.15-stretch
+FROM node:lts-alpine
 
-# https://www.npmjs.com/package/@angular/cli?activeTab=versions
-RUN npm install -g @angular/cli@7.3.6
+# development/production
+ENV NODE_ENV=development
+
+RUN apk update && \
+    npm install -g npm && \
+    npm install -g @angular/cli
 
 WORKDIR /app
+RUN npm install
 
-# EXPOSE 4200
+EXPOSE 8080
+CMD ["ash"]
