@@ -4,7 +4,7 @@ FROM node:lts-alpine
 # development/production
 ENV NODE_ENV=development
 
-https://www.npmjs.com/package/@angular/cli?activeTab=versions
+#https://www.npmjs.com/package/@angular/cli?activeTab=versions
 RUN apk update && \
     npm install -g npm && \
     npm install -g @angular/cli@7.3.6
