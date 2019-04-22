@@ -22,7 +22,7 @@ $ docker build -t shinyay/angular-cli .
 ```
 ### Create Project
 ```
-$ 
+$ docker run --rm -it -v (pwd):/app shinyay/angular-cli ng new my-app
 ```
 
 ## Installation
