@@ -1,6 +1,6 @@
 # Anguler CLI on Docker
 
-Overview
+Containerized Angular CLI 
 
 ## Description
 
@@ -16,6 +16,14 @@ Overview
 ## Requirement
 
 ## Usage
+### Create Docker Images
+```
+$ docker build -t shinyay/angular-cli .
+```
+### Create Project
+```
+$ 
+```
 
 ## Installation
 
