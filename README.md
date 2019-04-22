@@ -37,7 +37,7 @@ $ docker run --rm -it -v (pwd):/app shinyay/angular-cli npm audit
 
 ### Start Server
 ```
-$ docker run --rm -it -v (pwd):/app -p 4200:4200 shinyay/angular-cli ng serve --host 0.0.0.0 --open
+$ docker run --rm -it -v (pwd):/app -p 4200:4200 shinyay/angular-cli ng serve --host 0.0.0.0 --poll=2000
 ```
 
 ## Installation
