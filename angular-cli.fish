@@ -8,7 +8,7 @@ function run_docker
     echo "angular-cli.fish <COMMAND>"
     return
   end
-  docker run --rm -it -v (pwd)/angularclient:/app shinyay/angular-cli $argv
+  docker run --rm -it -v (pwd):/app shinyay/angular-cli $argv
 end
 
 run_docker $argv
