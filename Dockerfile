@@ -6,6 +6,7 @@ ENV NODE_ENV=development
 
 #https://www.npmjs.com/package/@angular/cli?activeTab=versions
 RUN apk update && \
+    apk add --update python make git && \
     npm install -g npm && \
     npm install -g @angular/cli@7.3.6
 
