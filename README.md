@@ -25,6 +25,16 @@ $ docker build -t shinyay/angular-cli .
 $ docker run --rm -it -v (pwd):/app shinyay/angular-cli ng new my-app
 ```
 
+#### Fix vulnerbility
+```
+$ docker run --rm -it -v (pwd):/app shinyay/angular-cli npm audit fix
+```
+
+#### Show vulnerbility details
+```
+$ docker run --rm -it -v (pwd):/app shinyay/angular-cli npm audit
+```
+
 ## Installation
 
 ## Licence
