@@ -1,5 +1,7 @@
 # https://hub.docker.com/r/library/node/tags/
-FROM node:lts-alpine
+FROM node:10.16.0-alpine
+
+LABEL maintainer="shinyay"
 
 # development/production
 ENV NODE_ENV=development
