@@ -10,7 +10,7 @@ ENV NODE_ENV=development
 RUN apk update && \
     apk add --update python make git && \
     npm install -g npm && \
-    npm install -g @angular/cli@8.1.2 \
+    npm install -g @angular/cli@7.3.8 \
     npm install --save-dev @angular-devkit/build-angular
 
 WORKDIR /app
